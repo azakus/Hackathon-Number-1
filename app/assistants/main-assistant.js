@@ -237,8 +237,7 @@ MainAssistant.prototype.listTap = function(event) {
 		return;
 	}
 	var launchParams = {
-        id: "com.palm.app.browser",
-        params: {'target': event.item.url}
+        target: event.item.url
     };
  
     this.controller.serviceRequest('palm://com.palm.applicationManager',
